@@ -1,2 +1,2 @@
 # flask-app-gcp-deploy
-A  Google App Engine application created using GCP Cloud Shel and deployed using Cloud Build.
+A  Google App Engine application. Created with GCP Cloud Shel. Deployed with Cloud Build.
