@@ -12,7 +12,7 @@ Create ssh-keys and upload it to Github.
 ```
 ssh-keygen -t rsa
 ```
-Create a new repo on github, clone it to GCP local and cd into it.  
+Create a new repo on github, clone it to your GCP local and cd into it.  
 Create all needed files, including **app.yaml, Makefile, requirementss.txt, main.py**. The app.yaml is part of the IaC (Infrastructure as Code) and configures the PaaS environment for Google App Engine.  
 
 ### Run this app locally
@@ -53,7 +53,7 @@ gcloud app deploy
 Then this app will be available on a public url, you can visit the provided url to see it.  
 
 ### Set up continuous deployment
-Can set up CD following this [Google Cloud Tutorial](https://cloud.google.com/source-repositories/docs/quickstart-triggering-builds-with-source-repositories).  
+Tutorial:  [Automate App Engine deployments with Cloud Build](https://cloud.google.com/source-repositories/docs/quickstart-triggering-builds-with-source-repositories).  
 Create **cloudbuild.yaml** file.  
 Search Cloud Build on GCP console and open it.  
 Select Trigger and create a new **trigger**, set repository event to "Push to a branch", connnect your related github repository as the source to watch for events, chosse master branch.  
