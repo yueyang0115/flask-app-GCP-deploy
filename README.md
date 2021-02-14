@@ -12,7 +12,7 @@ Create ssh-keys and upload it to Github.
 ```
 ssh-keygen -t rsa
 ```
-Create a new repo on github, clone it to your GCP local and cd into it.  
+Create a new repo on github, git clone it to your GCP local and cd into it.  
 Create all needed files, including **app.yaml, Makefile, requirementss.txt, main.py**. The app.yaml is part of the IaC (Infrastructure as Code) and configures the PaaS environment for Google App Engine.  
 
 ### Run this app locally
