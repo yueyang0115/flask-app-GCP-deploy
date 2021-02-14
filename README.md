@@ -1,7 +1,11 @@
 # flask-app-gcp-deploy
 A flask application deployed on Google Cloud Platform(GCP). Continuous deployment is coordinated with Cloud Build.  
-For this project, I follewed this [YouTube Walkthrough of GCP Auto-Deploy](https://www.youtube.com/watch?v=2BJSUlaKMjQ).  
-Here is a more detailed [Walkthrough](https://www.youtube.com/watch?v=_TfWdOvQXwU).
+
+## Reference
+Source code: [noahgift/gcp-flask-ml-deploy](https://github.com/noahgift/gcp-flask-ml-deploy).  
+Youtube walkthrough: 9min, [Continuous Delivery of GCP Google App Engine](https://www.youtube.com/watch?v=2BJSUlaKMjQ).  
+Youtube walkthrough: 27min, [Setup Continuous Delivery on GCP Platform with Google App Engine and Cloud Build](https://www.youtube.com/watch?v=_TfWdOvQXwU).  
+Google documents: [Automate App Engine deployments with Cloud Build](https://cloud.google.com/source-repositories/docs/quickstart-triggering-builds-with-source-repositories).
 
 ## How to use
 To deploy this app on GCP and set up continuous deployment, you can follow these steps:
@@ -53,7 +57,7 @@ gcloud app deploy
 Then this app will be available on a public url, you can visit the provided url to see it.  
 
 ### Set up continuous deployment
-Tutorial:  [Automate App Engine deployments with Cloud Build](https://cloud.google.com/source-repositories/docs/quickstart-triggering-builds-with-source-repositories).  
+Documents:  [Automate App Engine deployments with Cloud Build](https://cloud.google.com/source-repositories/docs/quickstart-triggering-builds-with-source-repositories).  
 Create **cloudbuild.yaml** file.  
 Search Cloud Build on GCP console and open it.  
 Select Trigger and create a new **trigger**, set repository event to "Push to a branch", connnect your related github repository as the source to watch for events, chosse master branch.  
