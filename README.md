@@ -1,7 +1,5 @@
 # flask-app-gcp-deploy
-
 A flask application deployed on Google Cloud Platform(GCP). Continuous deployment is coordinated with Cloud Build.  
-
 For this project, I follewed this [YouTube Walkthrough of GCP Auto-Deploy](https://www.youtube.com/watch?v=2BJSUlaKMjQ).  
 Here is a more detailed [Walkthrough](https://www.youtube.com/watch?v=_TfWdOvQXwU).
 
@@ -9,15 +7,13 @@ Here is a more detailed [Walkthrough](https://www.youtube.com/watch?v=_TfWdOvQXw
 To deploy this app on GCP and set up continuous deployment, you can follow these steps:
 
 ### Set up a project
-Go to Google Cloud Platform and create a new project.  
-Change your current project to this new project and activate the Cloud Shell.  
+Create a new project on GCP, change your current project to it and activate Cloud Shell.  
 Create ssh-keys and upload it to Github.  
 ```
 ssh-keygen -t rsa
 ```
-Create a new repo and clone this repo to your local and cd into it.  
-Create all needed files, including **app.yaml, Makefile, requirementss.txt, main.py**.  
-The app.yaml is part of the IaC (Infrastructure as Code) and configures the PaaS environment for Google App Engine.  
+Create a new repo on github, clone it to GCP local and cd into it.  
+Create all needed files, including **app.yaml, Makefile, requirementss.txt, main.py**. The app.yaml is part of the IaC (Infrastructure as Code) and configures the PaaS environment for Google App Engine.  
 
 ### Run this app locally
 Create a virtual environment and activate it.  
