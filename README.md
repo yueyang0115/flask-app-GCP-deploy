@@ -39,5 +39,5 @@ Search Cloud Build on GCP console and open it.
 Select Trigger and create a new trigger, set repository event to "Push to a branch", connnect your related github repository as the source to watch for events, chosse master branch.  
 Go to settings in Cloud Build, enable App Engine and Service accounts.  
 
-### Done! 
+### Done! See pipeline under Cloud Build
 Now if you make a change to your code on github, this app will be redeployed automatically. You can see the new build pipeline under Cloud Build.  
