@@ -22,7 +22,7 @@ Create all needed files, including **app.yaml, Makefile, requirementss.txt, main
 ### Run this app locally
 Create a virtual environment and activate it.  
 ```
-virtualenv ~/.flask
+python3 -m venv ~/.flask
 source ~/.flask/bin/activate
 ```
 Install the required packages.  
@@ -61,7 +61,8 @@ Documents:  [Automate App Engine deployments with Cloud Build](https://cloud.goo
 Create **cloudbuild.yaml** file.  
 Search Cloud Build on GCP console and open it.  
 Select Trigger and create a new **trigger**, set repository event to "Push to a branch", connnect your related github repository as the source to watch for events, chosse master branch.  
-Go to settings in Cloud Build, **enable App Engine and Service accounts**.  
+Select "settings", then click on "Cloud Build service account". In the newly open documenation, click on "Open the Cloud Build Settings page". In the new page, **enable App Engine and Service accounts**.  
+<img width="1279" alt="gcp" src="https://user-images.githubusercontent.com/44473421/116343446-6d051900-a7b2-11eb-9318-4fedf8b8833d.png">
 
 ### Done! See pipeline under Cloud Build
 Commit all your changes to github.  
